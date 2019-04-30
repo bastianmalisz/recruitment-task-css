@@ -1,0 +1,480 @@
+// media queries
+
+// 1366px - 1919px
+@media screen and (min-width: $mediaBigScreen) and (max-width: $mediaLargeScreen - 1) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .appFooter,
+  .appHeader,
+  .contentContainer {
+    width: $mainContentWidthMaxRes * $bigScreenPointer;
+  }
+  .appHeader,
+  .appFooter {
+    height: $headerHeightMax * $bigScreenPointer;
+  }
+  .contentContainer {
+    height: $mainContentHeightMaxRes * $bigScreenPointer;
+  }
+
+  .appHeader {
+    &--icon {
+      width: $headerHTMLIconDimension * $bigScreenPointer;
+      height: $headerHTMLIconDimension * $bigScreenPointer;
+
+      &--fa {
+        font-size: $headerHTMLIconSize * $bigScreenPointer;
+      }
+    }
+  }
+
+  .appSection {
+    &--buttonRow {
+      &--button {
+        width: $secondSectionButtonWidth * $bigScreenPointer;
+        height: $secondSectionButtonHeight * $bigScreenPointer;
+      }
+    }
+
+    &--manipulativeParagraph {
+      max-height: $maxManipulativeHeight * $bigScreenPointer;
+    }
+  }
+
+  input[type='radio'] + label {
+    &:before {
+      width: $radioOuterCircle * $bigScreenPointer;
+      height: $radioOuterCircle * $bigScreenPointer;
+    }
+  }
+  input[type='radio']:checked + label {
+    &:after {
+      width: $radioInnerCircle * $bigScreenPointer;
+      height: $radioInnerCircle * $bigScreenPointer;
+      top: 8px;
+      left: 8px;
+    }
+  }
+
+  .appFooter {
+    &--container {
+      &--element {
+        &--icon {
+          width: $footerIconDimensions * $bigScreenPointer;
+          height: $footerIconDimensions * $bigScreenPointer;
+
+          &__border {
+            width: $footerIconDimensions * $bigScreenPointer;
+            height: $footerIconDimensions * $bigScreenPointer;
+          }
+          span {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+          }
+        }
+        &--logo {
+          font-size: 1.5rem;
+
+          &:after {
+            left: -4.5rem;
+          }
+
+          &:before {
+            right: -4.5rem;
+          }
+        }
+        &--buttonContainer {
+          cursor: pointer;
+
+          &--menu {
+            top: -125px;
+            width: 245px * 0.87;
+          }
+          &--button {
+            width: $footerButtonWidth * $bigScreenPointer;
+
+            &:after {
+              width: $footerButtonSignDimension * $bigScreenPointer;
+              height: $footerButtonSignDimension * $bigScreenPointer;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 1280px - 1366px
+
+@media screen and (min-width: $mediaMediumScreen) and (max-width: $mediaBigScreen - 1) {
+  html,
+  body {
+    font-size: 11px;
+  }
+
+  .appFooter,
+  .appHeader,
+  .contentContainer {
+    width: $mainContentWidthMaxRes * $mediumScreenPointer;
+  }
+  .appHeader,
+  .appFooter {
+    height: $headerHeightMax * $mediumScreenPointer;
+  }
+  .contentContainer {
+    height: $mainContentHeightMaxRes * 1.1;
+  }
+
+  .appHeader {
+    &--icon {
+      width: $headerHTMLIconDimension * $mediumScreenPointer;
+      height: $headerHTMLIconDimension * $mediumScreenPointer;
+
+      &--fa {
+        font-size: $headerHTMLIconSize * $mediumScreenPointer;
+      }
+    }
+  }
+
+  .appSection {
+    &--buttonRow {
+      &--button {
+        width: $secondSectionButtonWidth * $mediumScreenPointer;
+        height: $secondSectionButtonHeight * $mediumScreenPointer;
+      }
+    }
+
+    &--manipulativeParagraph {
+      max-height: $maxManipulativeHeight * $mediumScreenPointer;
+    }
+  }
+
+  input[type='radio'] + label {
+    &:before {
+      width: $radioOuterCircle * $mediumScreenPointer;
+      height: $radioOuterCircle * $mediumScreenPointer;
+    }
+  }
+  input[type='radio']:checked + label {
+    &:after {
+      width: $radioInnerCircle * $mediumScreenPointer;
+      height: $radioInnerCircle * $mediumScreenPointer;
+      top: 8px;
+      left: 8px;
+    }
+  }
+
+  .appFooter {
+    &--container {
+      &--element {
+        &--icon {
+          width: $footerIconDimensions * $mediumScreenPointer;
+          height: $footerIconDimensions * $mediumScreenPointer;
+
+          &__border {
+            width: $footerIconDimensions * $mediumScreenPointer;
+            height: $footerIconDimensions * $mediumScreenPointer;
+          }
+          span {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+          }
+        }
+        &--logo {
+          font-size: 1.5rem;
+
+          &:after {
+            left: -4.5rem;
+          }
+
+          &:before {
+            right: -4.5rem;
+          }
+        }
+
+        &--buttonContainer {
+          cursor: pointer;
+
+          &--menu {
+            top: -118px;
+            width: 245px * 0.77;
+          }
+
+          &--button {
+            width: $footerButtonWidth * $mediumScreenPointer;
+            cursor: pointer;
+
+            &:after {
+              width: $footerButtonSignDimension * $mediumScreenPointer;
+              height: $footerButtonSignDimension * $mediumScreenPointer;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 1024px - 1280px
+
+@media screen and (min-width: $mediaSmallScreen) and (max-width: $mediaMediumScreen - 1) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  .appFooter,
+  .appHeader,
+  .contentContainer {
+    width: $mainContentWidthMaxRes * $smallerScreenPointer;
+  }
+  .appHeader,
+  .appFooter {
+    height: $headerHeightMax * $smallerScreenPointer;
+  }
+  .contentContainer {
+    height: $mainContentHeightMaxRes * 0.8;
+  }
+
+  .appHeader {
+    &--icon {
+      width: $headerHTMLIconDimension * $smallerScreenPointer;
+      height: $headerHTMLIconDimension * $smallerScreenPointer;
+
+      &--fa {
+        font-size: $headerHTMLIconSize * 0.8;
+      }
+    }
+  }
+
+  .appSection {
+    &--buttonRow {
+      &--button {
+        width: $secondSectionButtonWidth * $smallerScreenPointer;
+        height: $secondSectionButtonHeight * $smallerScreenPointer;
+      }
+    }
+
+    &--manipulativeParagraph {
+      max-height: $maxManipulativeHeight * $smallerScreenPointer;
+    }
+  }
+
+  input[type='radio'] + label {
+    &:before {
+      width: $radioOuterCircle * $smallerScreenPointer;
+      height: $radioOuterCircle * $smallerScreenPointer;
+    }
+  }
+  input[type='radio']:checked + label {
+    &:after {
+      width: $radioInnerCircle * $smallerScreenPointer;
+      height: $radioInnerCircle * $smallerScreenPointer;
+      top: 6.5px;
+      left: 6.5px;
+    }
+  }
+
+  .appFooter {
+    &--container {
+      &--element {
+        &--icon {
+          width: $footerIconDimensions * $smallerScreenPointer;
+          height: $footerIconDimensions * $smallerScreenPointer;
+
+          &__border {
+            width: $footerIconDimensions * $smallerScreenPointer;
+            height: $footerIconDimensions * $smallerScreenPointer;
+          }
+          span {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+          }
+        }
+        &--logo {
+          font-size: 1.5rem;
+
+          &:after {
+            left: -5.5rem;
+          }
+
+          &:before {
+            right: -5.5rem;
+          }
+        }
+        &--buttonContainer {
+          &--menu {
+            top: -118px;
+            width: 245px * 0.68;
+          }
+          &--button {
+            width: $footerButtonWidth * $smallerScreenPointer;
+
+            &:after {
+              width: $footerButtonSignDimension * $smallerScreenPointer;
+              height: $footerButtonSignDimension * $smallerScreenPointer;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//media mobile
+
+@media screen and (max-width: $mediaPhones) {
+  html,
+  body {
+    font-size: 10px;
+  }
+
+  .appFooter,
+  .appHeader,
+  .contentContainer {
+    width: 100vw;
+  }
+
+  .appHeader,
+  .appFooter {
+    height: 10vh;
+  }
+  .contentContainer {
+    height: 80vh;
+  }
+
+  .appHeader {
+    &--icon {
+      width: $headerHTMLIconDimension * 0.65;
+      height: $headerHTMLIconDimension * 0.65;
+
+      &--fa {
+        font-size: $headerHTMLIconSize * 0.8;
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    &--paragraph {
+      font-size: $fontSizeNormal;
+    }
+
+    &--userData {
+      font-size: 1.3rem;
+    }
+  }
+
+  .sectionsContainer {
+    flex-wrap: wrap;
+
+    .appSection {
+      width: 40%;
+
+      &--manipulativeParagraph {
+        font-size: 1.3em;
+      }
+
+      &--header {
+        margin-bottom: 2rem;
+      }
+
+      &--radioOptionsContainer {
+        &--row {
+          padding-top: 1rem;
+          padding-left: 0px;
+        }
+      }
+      &--buttonRow {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+
+        &--button {
+          margin: 0.5rem;
+          font-size: 1.6rem;
+        }
+      }
+
+      &:nth-of-type(3) {
+        width: 90%;
+        max-height: 35%;
+        padding: 1px;
+        margin-top: 2.5rem;
+      }
+    }
+  }
+
+  #sectionTwo {
+    margin-left: 1rem;
+    .appSection--header {
+      width: 100%;
+      text-align: right;
+    }
+  }
+
+  #sectionOne {
+    .appSection--header {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  input[type='radio'] + label {
+    &:before {
+      width: $radioOuterCircle * 0.6;
+      height: $radioOuterCircle * 0.6;
+    }
+  }
+  input[type='radio']:checked + label {
+    &:after {
+      width: $radioInnerCircle * 0.6;
+      height: $radioInnerCircle * 0.6;
+      top: 7px;
+      left: 7px;
+    }
+  }
+
+  .appFooter {
+    &--container {
+      &--element {
+        width: 50%;
+
+        &--icon {
+          width: $footerIconDimensions * 0.6;
+          height: $footerIconDimensions * 0.6;
+
+          &__border {
+            width: $footerIconDimensions * 0.6;
+            height: $footerIconDimensions * 0.6;
+          }
+          span {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+          }
+        }
+        &--logo {
+          display: none;
+        }
+
+        &--buttonContainer {
+          cursor: pointer;
+
+          &--button {
+            width: 160px;
+          }
+
+          &--menu {
+            top: -118px;
+            width: 170px;
+          }
+        }
+      }
+    }
+  }
+}

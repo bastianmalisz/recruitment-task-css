@@ -1,0 +1,10 @@
+@import './constants.scss';
+
+.appContainer,
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $appBackgroundColor;
+}

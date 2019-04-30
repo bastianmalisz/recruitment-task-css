@@ -1,0 +1,72 @@
+// app sizes
+$mainContentWidthMaxRes: 1735px;
+$mainContentHeightMaxRes: 720px;
+
+$headerHeightMax: 130px;
+$headerHTMLIconDimension: 90px;
+$headerHTMLIconSize: 4.1rem;
+
+$radioInnerCircle: 20px;
+$radioOuterCircle: 30px;
+
+$maxManipulativeHeight: 250px;
+
+$footerHeightMaxRes: 130px;
+$footerIconDimensions: 95px;
+$footerLogoWing: 50px;
+$footerButtonWidth: 225px;
+$footerButtonSignDimension: 6px;
+
+$secondSectionButtonWidth: 165px;
+$secondSectionButtonHeight: 45px;
+
+// background colors
+$appBackgroundColor: rgb(14, 14, 14);
+$mainContentBackgroundColor: rgb(42, 45, 54);
+$footerBackgroundColor: rgb(21, 22, 26);
+
+// text colors
+$mainContentTextColor: white;
+$footerTextColor: rgb(40, 42, 49);
+$greyTextColor: rgb(161, 167, 181);
+
+// font family
+$appFont: 'Open Sans', sans-serif;
+
+// font sizes
+$fontSizeSmall: 1rem;
+$fontSizeNormal: 1.3rem;
+$fontSizeBig: 2rem;
+$fontSizeLarge: 2.8rem;
+
+// font weights
+$fontWeightLight: 300;
+$fontWeightNormal: 400;
+$fontWeightBold: 700;
+$fontWeightFatty: 800;
+
+// hover colors
+$hoverGradient: linear-gradient(
+  135deg,
+  rgba(168, 94, 0, 1) 0%,
+  rgba(254, 158, 35, 1) 100%
+);
+$hoverMainColor: rgb(232, 131, 1);
+
+//margins
+$marginSmall: 1rem;
+$marginNormal: 1.5rem;
+$marginBig: 3.5rem;
+$marginLarge: 4rem;
+
+//media queries
+$mediaLargeScreen: 1920px;
+$mediaBigScreen: 1366px;
+$mediaMediumScreen: 1280px;
+$mediaSmallScreen: 1024px;
+$mediaPhones: 959px;
+
+// media pointer
+$bigScreenPointer: 0.71;
+$mediumScreenPointer: 0.64;
+$smallerScreenPointer: 0.54;

@@ -1,0 +1,60 @@
+@import './constants.scss';
+
+.appHeader {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: $mainContentWidthMaxRes;
+  height: $headerHeightMax;
+  color: $mainContentTextColor;
+
+  &--paragraph {
+    font-size: 2.2rem;
+    margin-right: 3.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &--userData {
+    display: none;
+    font-size: 2.2rem;
+    font-weight: $fontWeightLight;
+  }
+
+  &--icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: $headerHTMLIconDimension;
+    height: $headerHTMLIconDimension;
+    border-radius: 50%;
+    background-color: $mainContentBackgroundColor;
+    margin-left: 3.5rem;
+
+    &:hover {
+      background-color: $hoverMainColor;
+      cursor: pointer;
+    }
+
+    &--fa {
+      font-size: $headerHTMLIconSize;
+      margin-top: 0.3rem;
+      color: white;
+    }
+  }
+
+  p > span {
+    font-weight: $fontWeightBold;
+  }
+}
+
+.visible {
+  display: inline;
+}
+
+.reset {
+  margin: 0;
+}
